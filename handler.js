@@ -36,7 +36,7 @@ function respond(req, res, next) {
 				content.message = content.message.replace(/\(YANINDA[\+| ]PİLAV\+YOĞURT\+SU\)\n/gi, "");
 				content.message = content.message.replace(/\d+[,]\d+\sTL[\n]/gi, "");
 				content.message = content.message.replace(/\d+[,]\d+TL[\n]/gi, "");
-				content.message = content.message.replace("5,00TL", "");
+                content.message = content.message.replace(/\d+[,]\d+TL/gi, "");
 
 				content.message = content.message.split("\n");
 
