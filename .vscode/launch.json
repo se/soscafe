@@ -11,7 +11,9 @@
 			"program": "${workspaceFolder}/handler.js",
 			"env": {
 				"SECRET": "85ab4eb0-118b-4c0f-a3d0-d0503ad56687",
-				"PUSH_URL": "https://webhook.monopush.io/telegram/5b155d74be31050001905472"
+                "PUSH_URL": "https://webhook.monopush.io/telegram/5b33b5ef09a14000015e20f1",
+                "PUSH_URL_DEVELOPMENT" : "https://webhook.monopush.io/telegram/5b155d74be31050001905472",
+				"ENVIRONMENT": "Development"
 			}
 		}
 	]
