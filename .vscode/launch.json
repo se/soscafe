@@ -1,17 +1,18 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Launch Program",
-      "program": "${workspaceFolder}/handler.js",
-      "env": {
-        "SECRET": "85ab4eb0-118b-4c0f-a3d0-d0503ad56687"
-      }
-    }
-  ]
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Launch Program",
+			"program": "${workspaceFolder}/handler.js",
+			"env": {
+				"SECRET": "85ab4eb0-118b-4c0f-a3d0-d0503ad56687",
+				"PUSH_URL": "https://webhook.monopush.io/telegram/5b155d74be31050001905472"
+			}
+		}
+	]
 }

@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 // MonoPush Group Url
 // const pushUrl = "https://webhook.monopush.io/telegram/5b33b5ef09a14000015e20f1";
 // MonoPush Personal Url
-const pushUrl = "https://webhook.monopush.io/telegram/5b155d74be31050001905472";
+const pushUrl = process.env.PUSH_URL;
 
 function respond(req, res, next) {
   const query = req.query;
@@ -71,6 +71,6 @@ server.use(restify.plugins.bodyParser());
 
 const trimContent = data => {};
 
-server.listen(8092, function() {
+server.listen(process.env.PORT || 8092, function() {
   console.log("%s listening at %s", server.name, server.url);
 });
