@@ -8,9 +8,9 @@ let environment = process.env.ENVIRONMENT || "Development";
 console.info(`You are running on ${environment} environment.`);
 
 if (environment === "Production") {
-	pushUrl = process.env.PUSH_URL_DEVELOPMENT;
-} else {
 	pushUrl = process.env.PUSH_URL;
+} else {
+	pushUrl = process.env.PUSH_URL_DEVELOPMENT;
 }
 
 if (!pushUrl) {
