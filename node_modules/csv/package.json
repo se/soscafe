@@ -1,0 +1,32 @@
+{
+  "name": "csv",
+  "version": "1.2.1",
+  "description": "CSV parser with simple api, full of options and tested against large datasets.",
+  "keywords": ["node", "csv", "tsv", "parser", "parse", "stringifier", "stringify"],
+  "homepage": "http://csv.adaltas.com",
+  "bugs": "https://github.com/adaltas/node-csv/issues",
+  "author": "David Worms <david@adaltas.com> (http://www.adaltas.com)",
+  "contributors": [
+    "David Worms <david@adaltas.com> (http://www.adaltas.com)"
+  ],
+  "license": "BSD-3-Clause",
+  "engines": {
+    "node": ">= 0.1.90"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adaltas/node-csv.git"
+  },
+  "dependencies": {
+    "csv-generate": "^1.1.2",
+    "csv-parse": "^1.3.3",
+    "stream-transform": "^0.2.2",
+    "csv-stringify": "^1.1.2"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "scripts": {
+    "coffee": "./node_modules/.bin/coffee -b -o lib src"
+  }
+}
